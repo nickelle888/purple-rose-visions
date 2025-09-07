@@ -10,8 +10,19 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with Gradient */}
-      <div className="absolute inset-0 bg-gradient-mystical">
+      {/* Video Background with Overlay */}
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/your-video-file.mp4" type="video/mp4" />
+          {/* Fallback gradient if video fails to load */}
+        </video>
+        <div className="absolute inset-0 bg-gradient-mystical opacity-50"></div>
         <div className="absolute inset-0 mystical-overlay"></div>
       </div>
 
