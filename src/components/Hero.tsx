@@ -10,13 +10,8 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background with Fallback Image */}
-      <div className="absolute inset-0">
-        <img
-          src={heroBackground}
-          alt="Mystical background with purple roses and cosmic elements"
-          className="w-full h-full object-cover"
-        />
+      {/* Background with Gradient */}
+      <div className="absolute inset-0 bg-gradient-mystical">
         <div className="absolute inset-0 mystical-overlay"></div>
       </div>
 
