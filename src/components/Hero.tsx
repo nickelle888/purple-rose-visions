@@ -19,7 +19,7 @@ const Hero = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/your-video-file.mp4" type="video/mp4" />
+          <source src="/mystical-background.mp4" type="video/mp4" />
           {/* Fallback gradient if video fails to load */}
         </video>
         <div className="absolute inset-0 bg-gradient-mystical opacity-50"></div>
