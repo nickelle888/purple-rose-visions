@@ -18,10 +18,24 @@ const Hero = () => {
           muted
           playsInline
           className="w-full h-full object-cover"
+          onError={(e) => {
+            console.error('Video failed to load:', e);
+            e.currentTarget.style.display = 'none';
+          }}
+          onLoadStart={() => console.log('Video loading started')}
+          onCanPlay={() => console.log('Video can play')}
         >
           <source src="/Firefly A close-up of a tarot table illuminated by flickering lit candles, casting a warm glow. The  (4).mp4" type="video/mp4" />
-          {/* Fallback gradient if video fails to load */}
         </video>
+        {/* Fallback background */}
+        <div 
+          className="w-full h-full bg-gradient-mystical"
+          style={{
+            backgroundImage: `url(${heroBackground})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-mystical opacity-50"></div>
         <div className="absolute inset-0 mystical-overlay"></div>
       </div>
