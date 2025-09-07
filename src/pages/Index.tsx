@@ -1,11 +1,9 @@
-// Removed component imports for testing
+import Hero from '@/components/Hero';
 
 const Index = () => {
-  console.log('Index component rendering...');
-  
   return (
-    <div style={{ background: 'red', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <h1 style={{ color: 'white', fontSize: '2rem' }}>TEST - APP IS WORKING</h1>
+    <div className="min-h-screen">
+      <Hero />
     </div>
   );
 };

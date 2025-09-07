@@ -12,6 +12,17 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-mystical">
+      {/* Mystical Background Video */}
+      <video 
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-30"
+      >
+        <source src="/mystical-background (1).mp4" type="video/mp4" />
+      </video>
+
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="font-cinzel-decorative text-5xl md:text-7xl lg:text-8xl font-bold mb-4 text-foreground">
