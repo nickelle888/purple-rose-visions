@@ -9,19 +9,11 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  console.log('Index component rendering...');
+  
   return (
-    <div className="min-h-screen mystical-bg">
-      <Navigation />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <Booking />
-        <Events />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
+    <div style={{ background: 'red', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <h1 style={{ color: 'white', fontSize: '2rem' }}>TEST - APP IS WORKING</h1>
     </div>
   );
 };
