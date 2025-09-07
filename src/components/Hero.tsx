@@ -19,7 +19,6 @@ const Hero = () => {
         loop 
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-30"
-      >
         <source src="/mystical-background (1).mp4" type="video/mp4" />
       </video>
 
