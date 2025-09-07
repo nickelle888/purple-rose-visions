@@ -19,7 +19,7 @@ const Hero = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/mystical-background.mp4" type="video/mp4" />
+          <source src="/Firefly A close-up of a tarot table illuminated by flickering lit candles, casting a warm glow. The  (4).mp4" type="video/mp4" />
           {/* Fallback gradient if video fails to load */}
         </video>
         <div className="absolute inset-0 bg-gradient-mystical opacity-50"></div>
